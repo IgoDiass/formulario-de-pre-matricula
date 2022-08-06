@@ -27,21 +27,24 @@
 
   <!-- Com redirecionamento p/ página: obrigado.html -->
   <form action="obrigado.html" method="get" onsubmit="abrirWhatsapp()">
-    <p class="cadastro">Nome:</p>
-    <input type="text" name="nome" id="nome" placeholder="Nome completo" required><br>
-    <p class="cadastro">CPF:</p>
-    <input type="text" name="cpf" id="cpf" placeholder="xxx.xxx.xxx.-xx" required><br>
-    <p class="cadastro">Data de Nascimento:</p>
-    <input type="date" name="data" id="data" placeholder="Data de Nascimento" required><br>
-    <p class="cadastro">Telefone:</p>
-    <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required><br>
-    <p class="cadastro">Endereço</p>
-    <input type="text" name="endereco" id="endereco" placeholder="Endereço" required><br>
-    <p class="cadastro">Nº</p>
-    <input type="text" name="n" id="n" placeholder="Nº" required>
-    <p class="cadastro">Bairro</p>
-    <input type="text" name="bairro" id="bairro" placeholder="Bairro" required>
-
+    <div class="horario">
+      <p class="cadastro">Nome:</p>
+      <input type="text" name="nome" id="nome" placeholder="Nome completo" required><br>
+      <p class="cadastro">CPF:</p>
+      <input type="text" name="cpf" id="cpf" placeholder="xxx.xxx.xxx.-xx" required><br>
+      <p class="cadastro">Data de Nascimento:</p>
+      <input type="date" name="data" id="data" placeholder="Data de Nascimento" required><br>
+      <p class="cadastro">Telefone:</p>
+      <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required><br>
+      <p class="cadastro">Endereço</p>
+      <input type="text" name="endereco" id="endereco" placeholder="Endereço" required><br>
+      <p class="cadastro">Nº</p>
+      <input type="text" name="n" id="n" placeholder="Nº" required>
+      <p class="cadastro">Bairro</p>
+      <input type="text" name="bairro" id="bairro" placeholder="Bairro" required>
+    </div>
+    <br>
+    <br>
     <div class="horario">
       <p class="cadastro">Selecione o DIA e o HORÁRIO da <strong class="importante">primeira</strong> aula da semana:</p>
       <select name="select" id="semana1">
@@ -148,13 +151,13 @@
         + "*Endereço*: " + endereco + "%0a"
         + "*Nº*: " + n + "%0a"
         + "*Telefone*: " + telefone + "%0a"
-
+        + "%0a"
         + "*Primeiro horário*: " + semana1 + "%0a"
         + "*horário*: " + horario1 + "%0a"
-
+        + "%0a"
         + "*Segundo horário*: " + semana2 + "%0a"
         + "*horário*: " + horario2 + "%0a"
-
+        + "%0a"
         + "*Terceiro horário*: " + semana3 + "%0a"
         + "*horário*: " + horario3 + "%0a"; 
       window.open(url, '_blank').focus();
