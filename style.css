@@ -8,6 +8,7 @@
 }
 
 body {
+  padding: 10px;
   display: grid;
   place-content: center;
   width: 100%;
@@ -16,15 +17,27 @@ body {
 
   background-color: #ffffff;
   color: #000000;
+  background-image: url(fundo.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 h1,
 p,
 a {
   text-align: center;
+  color: white;
 }
 
+h1{
+  color: darkorange;
+}
 
+strong.importante{
+  color: darkorange;
+}
 p {
   font-size: 14px;
   margin-top: 16px;
@@ -84,4 +97,10 @@ button img {
 
 a {
   color: #25d366;
+}
+
+div.horario{
+  background-color: rgba(0, 128, 0, 0.473);
+  border: 1px solid black;
+  padding: 10px;
 }

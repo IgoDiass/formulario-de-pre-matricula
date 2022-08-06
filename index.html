@@ -42,8 +42,34 @@
     <p class="cadastro">Bairro</p>
     <input type="text" name="bairro" id="bairro" placeholder="Bairro" required>
 
-    <p class="cadastro">Selecione o DIA e o HORÁRIO da primeira aula da semana:</p>
-    <select name="select" id="semana1">
+    <div class="horario">
+      <p class="cadastro">Selecione o DIA e o HORÁRIO da <strong class="importante">primeira</strong> aula da semana:</p>
+      <select name="select" id="semana1">
+          <option value="Segunda Feira" selected>Segunda Feira:</option>
+          <option value="Terça Feira">Terça Feira</option>
+          <option value="Quarta Feira">Quarta Feira</option>
+          <option value="Quinta Feira">Quinta Feira</option>
+          <option value="Sexta Feira">Sexta Feira</option>
+          <option value="Sabado">Sabado</option>
+      </select>
+      <select name="select" id="horario1">
+        <option value="de 8h as 9h" selected>de 8h as 9h</option>
+        <option value="de 9h as 10h" >de 9h as 10h</option>
+        <option value="de 10h as 11h">de 10h as 11h</option>
+        <option value="de 11h as 12h">de 11h as 12h</option>
+        <option value="de 13h as 14h">de 13h as 14h</option>
+        <option value="de 14h as 15h">de 14h as 15h</option>
+        <option value="de 15h as 16h">de 15h as 16h</option>
+        <option value="de 16h as 17h">de 16h as 17h</option>
+        <option value="de 17h as 18h">de 17h as 18h</option>
+        <option value="de 18h as 19h">de 18h as 19h</option>
+        </select>
+    </div>
+  <br>
+  <br>
+  <div class="horario">
+    <p class="cadastro">Selecione o DIA e o HORÁRIO da <strong class="importante">segunda</strong> aula da semana:</p>
+    <select name="select" id="semana2">
         <option value="Segunda Feira" selected>Segunda Feira:</option>
         <option value="Terça Feira">Terça Feira</option>
         <option value="Quarta Feira">Quarta Feira</option>
@@ -51,8 +77,7 @@
         <option value="Sexta Feira">Sexta Feira</option>
         <option value="Sabado">Sabado</option>
     </select>
-
-    <select name="select" id="horario1">
+    <select name="select" id="horario2">
       <option value="de 8h as 9h" selected>de 8h as 9h</option>
       <option value="de 9h as 10h" >de 9h as 10h</option>
       <option value="de 10h as 11h">de 10h as 11h</option>
@@ -63,11 +88,13 @@
       <option value="de 16h as 17h">de 16h as 17h</option>
       <option value="de 17h as 18h">de 17h as 18h</option>
       <option value="de 18h as 19h">de 18h as 19h</option>
-  </select>
-  <br>
-  <br>
-  <p class="cadastro">Selecione o DIA e o HORÁRIO da segunda aula da semana:</p>
-  <select name="select" id="semana2">
+    </select>
+  </div>
+<br>
+<br>
+<div class="horario">
+  <p class="cadastro">Selecione o DIA e o HORÁRIO da <strong class="importante">terceira</strong> aula da semana:</p>
+  <select name="select" id="semana3">
       <option value="Segunda Feira" selected>Segunda Feira:</option>
       <option value="Terça Feira">Terça Feira</option>
       <option value="Quarta Feira">Quarta Feira</option>
@@ -75,8 +102,8 @@
       <option value="Sexta Feira">Sexta Feira</option>
       <option value="Sabado">Sabado</option>
   </select>
-
-  <select name="select" id="horario2">
+  
+  <select name="select" id="horario3">
     <option value="de 8h as 9h" selected>de 8h as 9h</option>
     <option value="de 9h as 10h" >de 9h as 10h</option>
     <option value="de 10h as 11h">de 10h as 11h</option>
@@ -87,31 +114,8 @@
     <option value="de 16h as 17h">de 16h as 17h</option>
     <option value="de 17h as 18h">de 17h as 18h</option>
     <option value="de 18h as 19h">de 18h as 19h</option>
-</select>
-<br>
-<br>
-<p class="cadastro">Selecione o DIA e o HORÁRIO da terceira aula da semana:</p>
-<select name="select" id="semana3">
-    <option value="Segunda Feira" selected>Segunda Feira:</option>
-    <option value="Terça Feira">Terça Feira</option>
-    <option value="Quarta Feira">Quarta Feira</option>
-    <option value="Quinta Feira">Quinta Feira</option>
-    <option value="Sexta Feira">Sexta Feira</option>
-    <option value="Sabado">Sabado</option>
-</select>
-
-<select name="select" id="horario3">
-  <option value="de 8h as 9h" selected>de 8h as 9h</option>
-  <option value="de 9h as 10h" >de 9h as 10h</option>
-  <option value="de 10h as 11h">de 10h as 11h</option>
-  <option value="de 11h as 12h">de 11h as 12h</option>
-  <option value="de 13h as 14h">de 13h as 14h</option>
-  <option value="de 14h as 15h">de 14h as 15h</option>
-  <option value="de 15h as 16h">de 15h as 16h</option>
-  <option value="de 16h as 17h">de 16h as 17h</option>
-  <option value="de 17h as 18h">de 17h as 18h</option>
-  <option value="de 18h as 19h">de 18h as 19h</option>
-</select>
+  </select>
+</div>
 <br>
 <br>
     <button type="submit"><img src="assets/whatsapp.svg" alt="Icone Whatsapp"><span>Enviar dados p/ Igo Dias</span>
@@ -146,13 +150,13 @@
         + "*Telefone*: " + telefone + "%0a"
 
         + "*Primeiro horário*: " + semana1 + "%0a"
-        + "*horario*: " + horario1 + "%0a"
+        + "*horário*: " + horario1 + "%0a"
 
         + "*Segundo horário*: " + semana2 + "%0a"
-        + "*horario*: " + horario2 + "%0a"
+        + "*horário*: " + horario2 + "%0a"
 
         + "*Terceiro horário*: " + semana3 + "%0a"
-        + "*horario*: " + horario3 + "%0a"; 
+        + "*horário*: " + horario3 + "%0a"; 
       window.open(url, '_blank').focus();
     }
   </script>
