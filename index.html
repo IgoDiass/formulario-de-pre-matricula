@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pré Matrícula</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Formulário de Cadastro</h1>
+  <br><br>
+  </p>
+
+  <!-- Sem redirecionamento -->
+  <!-- <form action="#" method="get" onsubmit="abrirWhatsapp()">
+    <input type="text" name="nome" id="nome" placeholder="Nome" required><br>
+    <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required><br>
+    <input type="email" name="email" id="email" placeholder="E-mail" required><br>
+    <textarea name="msg" id="msg" placeholder="Mensagem" cols="30" rows="5" required></textarea><br>
+    <button type="submit"><img src="assets/whatsapp.svg" alt="Icone Whatsapp"><span>Enviar dados p/ Whatsapp</span>
+    </button>
+  </form> -->
+
+  <!-- Com redirecionamento p/ página: obrigado.html -->
+  <form action="obrigado.html" method="get" onsubmit="abrirWhatsapp()">
+    <p class="cadastro">Nome:</p>
+    <input type="text" name="nome" id="nome" placeholder="Nome completo" required><br>
+    <p class="cadastro">CPF:</p>
+    <input type="text" name="cpf" id="cpf" placeholder="xxx.xxx.xxx.-xx" required><br>
+    <p class="cadastro">Data de Nascimento:</p>
+    <input type="date" name="data" id="data" placeholder="Data de Nascimento" required><br>
+    <p class="cadastro">Telefone:</p>
+    <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required><br>
+    <p class="cadastro">Endereço</p>
+    <input type="text" name="endereco" id="endereco" placeholder="Endereço" required><br>
+    <p class="cadastro">Nº</p>
+    <input type="text" name="n" id="n" placeholder="Nº" required>
+    <p class="cadastro">Bairro</p>
+    <input type="text" name="bairro" id="bairro" placeholder="Bairro" required>
+
+    <p class="cadastro">Selecione o DIA e o HORÁRIO da primeira aula da semana:</p>
+    <select name="select" id="semana1">
+        <option value="Segunda Feira" selected>Segunda Feira:</option>
+        <option value="Terça Feira">Terça Feira</option>
+        <option value="Quarta Feira">Quarta Feira</option>
+        <option value="Quinta Feira">Quinta Feira</option>
+        <option value="Sexta Feira">Sexta Feira</option>
+        <option value="Sabado">Sabado</option>
+    </select>
+
+    <select name="select" id="horario1">
+      <option value="de 8h as 9h" selected>de 8h as 9h</option>
+      <option value="de 9h as 10h" >de 9h as 10h</option>
+      <option value="de 10h as 11h">de 10h as 11h</option>
+      <option value="de 11h as 12h">de 11h as 12h</option>
+      <option value="de 13h as 14h">de 13h as 14h</option>
+      <option value="de 14h as 15h">de 14h as 15h</option>
+      <option value="de 15h as 16h">de 15h as 16h</option>
+      <option value="de 16h as 17h">de 16h as 17h</option>
+      <option value="de 17h as 18h">de 17h as 18h</option>
+      <option value="de 18h as 19h">de 18h as 19h</option>
+  </select>
+  <br>
+  <br>
+  <p class="cadastro">Selecione o DIA e o HORÁRIO da segunda aula da semana:</p>
+  <select name="select" id="semana2">
+      <option value="Segunda Feira" selected>Segunda Feira:</option>
+      <option value="Terça Feira">Terça Feira</option>
+      <option value="Quarta Feira">Quarta Feira</option>
+      <option value="Quinta Feira">Quinta Feira</option>
+      <option value="Sexta Feira">Sexta Feira</option>
+      <option value="Sabado">Sabado</option>
+  </select>
+
+  <select name="select" id="horario2">
+    <option value="de 8h as 9h" selected>de 8h as 9h</option>
+    <option value="de 9h as 10h" >de 9h as 10h</option>
+    <option value="de 10h as 11h">de 10h as 11h</option>
+    <option value="de 11h as 12h">de 11h as 12h</option>
+    <option value="de 13h as 14h">de 13h as 14h</option>
+    <option value="de 14h as 15h">de 14h as 15h</option>
+    <option value="de 15h as 16h">de 15h as 16h</option>
+    <option value="de 16h as 17h">de 16h as 17h</option>
+    <option value="de 17h as 18h">de 17h as 18h</option>
+    <option value="de 18h as 19h">de 18h as 19h</option>
+</select>
+<br>
+<br>
+<p class="cadastro">Selecione o DIA e o HORÁRIO da terceira aula da semana:</p>
+<select name="select" id="semana3">
+    <option value="Segunda Feira" selected>Segunda Feira:</option>
+    <option value="Terça Feira">Terça Feira</option>
+    <option value="Quarta Feira">Quarta Feira</option>
+    <option value="Quinta Feira">Quinta Feira</option>
+    <option value="Sexta Feira">Sexta Feira</option>
+    <option value="Sabado">Sabado</option>
+</select>
+
+<select name="select" id="horario3">
+  <option value="de 8h as 9h" selected>de 8h as 9h</option>
+  <option value="de 9h as 10h" >de 9h as 10h</option>
+  <option value="de 10h as 11h">de 10h as 11h</option>
+  <option value="de 11h as 12h">de 11h as 12h</option>
+  <option value="de 13h as 14h">de 13h as 14h</option>
+  <option value="de 14h as 15h">de 14h as 15h</option>
+  <option value="de 15h as 16h">de 15h as 16h</option>
+  <option value="de 16h as 17h">de 16h as 17h</option>
+  <option value="de 17h as 18h">de 17h as 18h</option>
+  <option value="de 18h as 19h">de 18h as 19h</option>
+</select>
+<br>
+<br>
+    <button type="submit"><img src="assets/whatsapp.svg" alt="Icone Whatsapp"><span>Enviar dados p/ Igo Dias</span>
+  </form>
+
+  <script>
+    function abrirWhatsapp() {
+      var nome = document.getElementById("nome").value;
+      var cpf = document.getElementById("cpf").value;
+      var data = document.getElementById("data").value;
+      var telefone = document.getElementById("telefone").value;
+      var endereco = document.getElementById("endereco").value;
+      var n = document.getElementById("n").value;
+      var bairro = document.getElementById("bairro").value;
+
+      var semana1 = document.getElementById("semana1").value;
+      var horario1 = document.getElementById("horario1").value;
+
+      var semana2 = document.getElementById("semana2").value;
+      var horario2 = document.getElementById("horario2").value;
+
+      var semana3 = document.getElementById("semana3").value;
+      var horario3 = document.getElementById("horario3").value;
+
+      var url = "https://wa.me/5599984470177?text=" // Seu numero
+        + "*Formulário de Cadastro*" + "%0a" // Mensagem personalizada
+        + "%0a" // Quebra de linha
+        + "*Nome*: " + nome + "%0a" // Dados do formulário
+        + "*CPF*: " + cpf + "%0a"
+        + "*Endereço*: " + endereco + "%0a"
+        + "*Nº*: " + n + "%0a"
+        + "*Telefone*: " + telefone + "%0a"
+
+        + "*Primeiro horário*: " + semana1 + "%0a"
+        + "*horario*: " + horario1 + "%0a"
+
+        + "*Segundo horário*: " + semana2 + "%0a"
+        + "*horario*: " + horario2 + "%0a"
+
+        + "*Terceiro horário*: " + semana3 + "%0a"
+        + "*horario*: " + horario3 + "%0a"; 
+      window.open(url, '_blank').focus();
+    }
+  </script>
+
+</body>
+
+</html>
