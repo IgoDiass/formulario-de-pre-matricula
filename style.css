@@ -18,7 +18,7 @@ body {
   margin: 10px auto;
 
   background-color: #ffffff;
-  color: #000000;
+  background-color: #014040;
   background-image: url(fundo.jpg);
   background-size: cover;
   background-position: center bottom;
@@ -105,8 +105,8 @@ a {
 }
 
 div.horario{
-  background-color: rgba(0, 128, 0, 0.473);
+  background-color: #731702;
   border-radius: 10px;
-  border: 1px solid black;
+
   padding: 10px;
 }
